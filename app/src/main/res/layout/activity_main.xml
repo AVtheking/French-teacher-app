@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" French teacher app"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/yellowbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="#F3DC19"
+        android:tag="yellow"
+        android:text="yellow"
+        android:onClick="Saythecolour"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/redbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#EA2929"
+        android:tag="red"
+        android:text="red"
+        android:onClick="Saythecolour"
+        app:layout_constraintEnd_toEndOf="@+id/yellowbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/yellowbtn"
+        app:layout_constraintTop_toBottomOf="@+id/yellowbtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/greenbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="#63AD0D"
+        android:tag="green"
+        android:onClick="Saythecolour"
+        android:text="green"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/yellowbtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/yellowbtn"
+        app:layout_constraintTop_toBottomOf="@+id/yellowbtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/purplebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:background="#6938BF"
+        android:tag="purple"
+        android:text="purple"
+        android:onClick="Saythecolour"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/yellowbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/yellowbtn"
+        app:layout_constraintTop_toBottomOf="@+id/yellowbtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/blackbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:background="@color/black"
+        android:tag="black"
+        android:text="black"
+        android:onClick="Saythecolour"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/yellowbtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/yellowbtn"
+        app:layout_constraintTop_toBottomOf="@+id/yellowbtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
